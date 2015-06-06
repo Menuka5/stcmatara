@@ -1,7 +1,7 @@
 angular.module('Search', [])
   .controller('Search', function($scope) {
     $scope.data = [
-      { text: "AngularJS is a toolset for building the framework most suited to your application development.<br> It is fully extensible and works well with other libraries.<br> Every feature can be modified or replaced to suit your unique development workflow and feature needs. " }
+      { text: "St' Thomas college was able secure first place at provinsonal school IT awards festival. Following students earned destinction pass certificates for their web development project.</p><p><li>Anuruddha Hewawasam</li><li>Menuka Ishan</li><li>Sanjeewa Jayasena</li><li>Thilina Madhusanka</li><li>Pubudu Indrasiri</li>" }
     ]
   })
   .filter('highlight', function($sce) {

@@ -13,6 +13,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+      .highlighted { background: yellow }
+    </style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript"> 
@@ -63,13 +68,13 @@
       
 </head>
 
-<body class="body">
+<body class="body" ng-app="Search">
 
 	<header class="mainHeader">
 		<!--<img src="images/logo.jpg">	-->	
 		<nav>
             <ul>
-            	<li><a href="home.htm" >Home</a></li>
+            	<li><a href="#home" >Home</a></li>
                 <li><a href="#home" >About School</a></li>
                 <li><a href="clubs.html" >Clubs</a></li>
                 <li><a href="#home" >Gallery</a></li>
@@ -141,35 +146,27 @@
 						<p><button onClick="clickCounter()" type="button">Listen Now</button></p>
 						<div id="result"></div>
 					</a>
-					
 				</content>				
 			</article>
-		</div>
-	</div>
 
-	<!--<aside class="first-sidebar">
-		<article>
-			<h2>Social Services Association</h2>
-			<p>Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar</p>
-		</article>
-	</aside>
+			<article class="bottomContent">
+				<header>
+					<h2><a href="#buddhist" id="#buddhist" title="Buddhist Society">Web Development Students Group</a></h2>
+				</header>
+				
+				<content>
+					<div class="container" ng-controller="Search">
+		      			<input type="text" placeholder="Search" ng-model="search.text">
 
-	<aside class="second-sidebar">
-		<article>
-			<h2>Muslim Majlis</h2>
-			<p>Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar</p>
-		</article>
-	</aside>
-
-	<aside class="third-sidebar">
-		<article>
-			<h2>Birds Club</h2>
-			<p>Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar</p>
-		</article>
-	</aside>-->
+		      			<ul><!--Filter Code-->
+		        			<div ng-repeat="item in data | filter:search.text" ng-bind-html="item.text | highlight:search.text"></div>
+		      			</ul>
+					</div>
+				</content>				
+			</article>
 
 	<footer class="mainFooter">
-		<p>This page designed by Anuruddha Hewawasam (Index 12000582)</p>
+		<p>This page designed by Anuruddha Hewawasam (Index 12000582), Group I</p>
 	</footer>
 		
 </body>
