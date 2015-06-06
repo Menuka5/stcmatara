@@ -22,7 +22,7 @@
 			var slides = $('.slide');
 			var numberOfSlides =slides.length;
 			var slideShowInterval;
-			var speed = 6000;
+			var speed = 3000;
 
 			slideShowInterval = setInterval(changePosition, speed);
 
@@ -45,6 +45,20 @@
 				$('#slidesHolder').animate({'marginLeft':slideWidth * (-currentPosition)});
 			}
 		});
+	</script>
+	<script>
+		function clickCounter() {
+		    if(typeof(Storage) !== "undefined") {
+		        if (sessionStorage.clickcount) {
+		            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+		        } else {
+		            sessionStorage.clickcount = 1;
+		        }
+		        document.getElementById("result").innerHTML = "You have reached youtube " + sessionStorage.clickcount + " time(s) in this session.";
+		    } else {
+		        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+		    }
+		}
 	</script>
       
 </head>
@@ -71,9 +85,24 @@
 				<content>
 					<div id="slideshow"> 
 						<div id="slideshowWindow"> 
-							<div class="slide"> <img src="images/image1.jpg" /> </div> 	
-							<div class="slide"> <img src="images/image2.jpg" /> </div> 	
-							<div class="slide"> <img src="images/image3.jpg" /> </div>
+							<div class="slide"> <img src="images/slide1.jpg" />
+								<div class="slideText"> 
+									<h2 class="slideTitle">Sports</h2> 
+										<p class="slideDes">St. Thomas' College Matara Cricket Team 2010.</p> 
+								</div>
+							</div> 	
+							<div class="slide"> <img src="images/slide2.jpg" />
+								<div class="slideText"> 
+									<h2 class="slideTitle">Mobitel School Boy Cricketer</h2> 
+										<p class="slideDes">St. Thomas' College, Matara captain Kushan Kanishka takes away the award for the runner-up best team in the Southern Province</p>  
+								</div>
+							</div> 	
+							<div class="slide"> <img src="images/slide3.jpg" />
+								<div class="slideText"> 
+									<h2 class="slideTitle">Sports</h2> 
+										<p class="slideDes">St. Thomas' College, Matara first XI.</p> 
+								</div>
+							</div>
 						</div> 
 					</div>
 				</content>				
@@ -83,9 +112,7 @@
 				<header>
 					<h2><a href="#prefects" id="#pref" title="Board of Prefects">Prefects Association</a></h2>
 				</header>
-				<footer>
-					<p class="post-info">This post is written by Anuruddha Hewawasam</p>
-				</footer>
+				
 				<content>
 					<p>St' Thomas college Prefects Association going to organize a short film festival. Watch one of the films that will be screening at that event.</p>
 					
@@ -100,18 +127,27 @@
 				<header>
 					<h2><a href="#buddhist" id="#buddhist" title="Buddhist Society">Buddhist Society</a></h2>
 				</header>
-				<footer>
-					<p class="post-info">This post is written by Anuruddha Hewawasam</p>
-				</footer>
+				
 				<content>
-					<p>Health Club Health Club Health Club Health Club Health Club Health Club Health Club Health Club Health Clubs Health Club Health Club Health Club Health Club</p>
-					<p>Health Club Health Club Health Club Health Club Health Club Health Club Health Club Health Club Health Clubs Health Club Health Club Health Club Health Club</p>
+					<p>St' Thomas college Buddhist Society organized "Poson Bathi Gee Saraniya 2015" last wednsday. Concluded successfully. listen one of the songs.</p>
+
+					<audio controls>
+						 <source src="audio/bakthigeeya.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio> 
+
+					<p>Listen and Watch more Bakthi Geetha on youtube.</p>
+					<a href="https://www.youtube.com/watch?v=xZ-ln0ZNVC0&list=PLGsR5qB5xNBtXUXPJgGCRaWr8owU3eigo" target="_blank">
+						<p><button onClick="clickCounter()" type="button">Listen Now</button></p>
+						<div id="result"></div>
+					</a>
+					
 				</content>				
 			</article>
 		</div>
 	</div>
 
-	<aside class="first-sidebar">
+	<!--<aside class="first-sidebar">
 		<article>
 			<h2>Social Services Association</h2>
 			<p>Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar</p>
@@ -130,10 +166,10 @@
 			<h2>Birds Club</h2>
 			<p>Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar Top sidebar</p>
 		</article>
-	</aside>
+	</aside>-->
 
 	<footer class="mainFooter">
-		<p>This page designed by Anuruddha Hewawasam</p>
+		<p>This page designed by Anuruddha Hewawasam (Index 12000582)</p>
 	</footer>
 		
 </body>
