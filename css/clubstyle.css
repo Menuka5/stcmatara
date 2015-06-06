@@ -1,0 +1,37 @@
+/*
+Author : Anuruddha Hewawasam
+Description : Responsive Web Design for St.Thomas' College - 12000582
+*/
+
+body {
+    color: #000305;
+    font-size: 87.5%;
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+
+}
+
+a.hover, a:active {
+    
+}
+
+.body {
+    margin: 0 auto;
+    width: 80%;
+    clear: both;
+}
+
+.mainContent {
+    line-height: 25px;
+    border-radius: 5px
+    -moz-border-radius: 5px;
+    -
+}
