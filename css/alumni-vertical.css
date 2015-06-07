@@ -91,3 +91,10 @@
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* CSS3 */
 }
+@media (max-width:480px){
+	
+	.vertical-list{
+		
+		visibility: hidden;
+	}
+}
