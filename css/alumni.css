@@ -1,6 +1,9 @@
 body{
+	position:relative;
 	margin-left:10% ;
-	height:800px;
+	margin-right:5% ;
+	margin-top:0;
+	padding:0;
 	background: linear-gradient(260deg, #F7F8FF, #000000);
 	border-bottom: 5px  solid;
 	border-bottom-right-radius: 50px;
@@ -18,13 +21,103 @@ footer{
 
 .block{
 		
-	background-position:center;
-	width:220px;
-	height:inherit;
-	margin:0;
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:16.8%;
+	height:100%;
+	margin-top:-5px;
+	
 	background-color: rgba(32, 41, 46,.5);
 	float: left;
+	z-index:5;
 	border: 5px solid;
 	border-top-left-radius: 50px;
 
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+.article #slider{
+	
+	
+	position:absolute;
+	top:0;
+
+	border-radius:5px;
+	left:17%;
+	margin-bottom: 12%;
+	margin-top: 7%;
+	
+	border-bottom: 20px solid transparent;
+	  border-image: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(84,84,84,1) 7%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(28,28,28,1) 32%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(28,28,28,1) 69%, rgba(43,43,43,1) 75%, rgba(19,19,19,1) 100%);
+
+	  border-image-slice: 1;
+} 
+.article #slider { overflow: hidden; }
+.article #slider figure img { width: 20%; float: right; }
+.article #slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  
+  animation: 30s slidy infinite; 
+}
+
+.article #message{
+position: relative;
+	left:18%;
+	top:inherit;
+	padding-top: 5%;
+	padding-right: 20%;
+	
+	
+}
+.article #message figcaption{
+	text-align: center;
+	text-shadow: 6px 0px 7px #000000;
+	color: #010000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    font-size:24px;
+	margin-top: 5px; margin-bottom: 0px;
+	text-align: center;
+        font-weight: normal;
+        
+	
+}
+.article #message figure{
+	float: left;
+	padding: 10px 10px 30px 10px;
+	background-color:white;
+	box-shadow: 2px 2px 3px #aaaaaa;
+	top:2px;
+}
+.article #message p{
+	
+	
+	 color: #424242;
+        font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.05em;
+	text-align:center;
+	margin: 5% auto;
+	
+	line-height: 100%;
+	font-size: 14pt;
+	font-variant: small-caps;
+	background-color:#D4D5DB;
+	border-radius:5px;
+	padding:5px; 
 }

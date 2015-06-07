@@ -10,6 +10,8 @@
     height: 58px;
     position: fixed;
     margin: 0 auto;
+    top:8px;
+    z-index: 20;
     
 }
 .menu li {
