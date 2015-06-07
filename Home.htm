@@ -16,6 +16,10 @@
             
             $("#flip2").click(function(){
                 $("#panel2").slideToggle("slow");   
+            });
+            
+            $("#flip3").click(function(){
+                $("#panel3").slideToggle("slow");   
             });  
         });
     </script>
@@ -53,18 +57,72 @@
             padding: 50px;
             display: none;
         }
+        
+        #panel3, #flip3{
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;  
+        }
+        
+        #panel3{
+            padding: 50px;
+            display: none;
+        }
+        
+        <!-- slider -->
+        
+        .container {
+          max-width: 400px;
+          background-color: black;
+          margin: 0 auto;
+          text-align: center;
+          position: relative;
+        }
+
+        .container div {
+          background-color: white;
+          width: 100%;
+          display: inline-block;
+          display: none;
+        }
+        
+        .container img {
+          width: 100%;
+          height: auto;
+        }
+
+        button {
+          position: absolute;
+        }
+
+        .next {
+          right: 5px;
+        }
+
+        .prev {
+          left: 5px;
+        }
     </style>
         
-    <style>
+    <style contentcss>
         .vmcolor{
             color: blue;
         }
     </style>
     
     
+    
+    <style>
+        
+
+    </style>
 </head>
 
 <body id="backcenter">
+    
+    
+    
     
     <div>
     
@@ -91,7 +149,35 @@
                     
                     <div>
                         <header>
-                            <h1>Message of the Principal</h1>
+                        
+                            <article>
+                            
+                                <h1>Message of the Principal</h1>
+                            
+                                <div>
+                                    <p>
+                                        It is privilege to be able to serve a college with a remarkable history in the city of Matara 
+                                        comprising over 3500 school student population. 
+                                        We strive to give the best for the students with a dedicated staff for the needs and requirements of the students.
+                                        
+                                    </p>
+                                    
+                                    <p>
+                                        The internet is used in communication in every field through out the world. 
+                                        Most of the counties get the use of internet in every field for communication. 
+                                        But in Sri Lanka, it is known that our usage of internet is in a low level. 
+                                        But it has spread out in every field. 
+                                        Because of the internet the qualitative development of education has increased. 
+                                        We are happy to be in the forefront in the field of sports,IT and with our academic excellence. 
+                                    </p>
+                                </div>
+                            
+                                <div>
+                                
+                                </div>
+                                
+                            </article>
+                            
                         </header>
                         
                     </div>
@@ -105,11 +191,25 @@
                             Gifting of an excellent Thomian to the nation and the universe.
                         </div>    
                     
+                    
                         <div id="flip2" style="width: 50%;" class="vmcolor">
                             OUR MISSION 
                         </div>
                         <div id="panel2" style="50%">
                         Creating a perfect individual, well-equipped with knowledge, attitudes and skills, who can face the challenging situations with confidence.
+                        </div>
+                        
+                        
+                        <div id="flip3" style="width: 50%;" class="vmcolor">
+                            Objectives of St. Thomas College, Matara.
+                        </div> 
+                        <div id="panel3" style="50%">
+                            <ol>
+                                <li>Providing equal educational opportunities for all students.</li>
+                                <li>Providing encouragement and secure locality for all students through implementation of well-organised educational programme.</li>
+                                <li>Building up of self confidence in all students in order to promote their achievement levels by developing their potential.</li>
+                                <li>Developing and implementing a conducive family environment within the school premises.</li>           
+                            </ol>
                         </div> 
                     </div>      
                 
