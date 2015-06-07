@@ -1,0 +1,30 @@
+body{
+	margin-left:10% ;
+	height:800px;
+	background: linear-gradient(260deg, #F7F8FF, #000000);
+	border-bottom: 5px  solid;
+	border-bottom-right-radius: 50px;
+	border-top: 5px solid ;
+	border-top-left-radius: 50px;
+	
+	
+}
+footer{
+	margin-bottom:0;
+	padding:0;
+	clear:both;
+	text-align: center;
+}
+
+.block{
+		
+	background-position:center;
+	width:220px;
+	height:inherit;
+	margin:0;
+	background-color: rgba(32, 41, 46,.5);
+	float: left;
+	border: 5px solid;
+	border-top-left-radius: 50px;
+
+}
