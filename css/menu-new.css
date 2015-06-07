@@ -1,3 +1,4 @@
+@media all {
 .menu, .menu ul {
     list-style: none;
     padding: 0  ;
@@ -14,6 +15,7 @@
     z-index: 20;
     
 }
+
 .menu li {
    
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525');
@@ -24,11 +26,13 @@
     border-top: 2px solid #303030;
     min-width: 160px;
 }
+
 .menu > li {
     display: block;
     float: left;
     position: relative;
 }
+
 .menu > li:first-child {
     border-radius: 5px 0 0;
 }
@@ -133,4 +137,17 @@
 }
 .submenu li:nth-child(8) {
     transition-delay: 0s;
+}
+}
+@media (max-width:480px){
+	
+	.menu > li {
+    display: block;
+    float: right;
+    position: relative;
+}
+.menu{
+	
+	position: absolute;
+}
 }
