@@ -53,43 +53,36 @@
         }
         
         #panel{
-            
-            padding: 30px;
+            padding: 50px;
             display: none;
-            
         }
         
         #panel2, #flip2{
-            
             padding: 5px;
             text-align: center;
             background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-              
+            border: solid 1px #c3c3c3;  
         }
         
         #panel2{
-            
-            padding: 30px;
+            padding: 50px;
             display: none;
-            
         }
         
         #panel3, #flip3{
-            
             padding: 5px;
             text-align: center;
             background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-              
+            border: solid 1px #c3c3c3;  
         }
         
         #panel3{
-            
-            padding: 20px;
+            padding: 50px;
             display: none;
-            
         }
+        
+        <!-- slider -->
+        
         
     </style>
         
@@ -105,15 +98,6 @@
         .showmore1{
             display: none;
         }
-        
-        table{
-            border: 3px solid white;
-        }
-        
-        table.center {
-            margin-left:auto; 
-            margin-right:auto;
-        }
     </style>
     
     
@@ -128,23 +112,22 @@
     
         <div ng-controller="slideShowTest" class="imageslide" ng-switch='slideshow' ng-animate="'animate'">
 			<div  ng-switch-when="1">
-				<img src="images/slider/1.jpg" style="width: 100%;"/>
+				<img src="images/slider/1.jpg"/>
 			</div>	
 			<div ng-switch-when="2">
-				<img src="images/slider/2.jpg" style="width: 100%;"/>
+				<img src="images/slider/2.jpg"/>
 			</div>
-			<div  ng-switch-when="3" >
-				<img src="images/slider/3.jpg" style="width: 100%;"/>
+			<div  ng-switch-when="3">
+				<img src="images/slider/3.jpg"/>
 			</div>	
 			<div ng-switch-when="4">
-				<img src="images/slider/4.jpg" style="width: 100%;"/>
+				<img src="images/slider/4.jpg"/>
 			</div>	
 		</div>
     
     
     
     <div>
-        
         
         <div style="position: center; width: 100%;" >
             <nav style="width: 100%;">
@@ -167,30 +150,20 @@
             <div>
             
             <div>
-                <div >
-                
-                <table style="color: white;" class="center">
-                    <tr>
-                        <td>
-                            <div >
-                                <img src="images/prince.jpg" />
-                            </div>        
-                        </td>
-                        <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </td>
-                        <td>
-                            <div>
+                <div>
+                    <img src="images/prince.jpg"/>
+                    
+                    <div>
                         <header>
                         
                             <article>
                             
                                 <h1>Message of the Principal</h1>
                             
-                                <div >
+                                <div>
                                     <p>
                                         It is privilege to be able to serve a college with a remarkable history in the city of Matara 
-                                        comprising over 3500 school student population. <br />
+                                        comprising over 3500 school student population. 
                                         We strive to give the best for the students with a dedicated staff for the needs and requirements of the students.
                                         
                                     </p>
@@ -200,11 +173,11 @@
                             
                                 <div id="show1" class="showmore1">
                                     <p>
-                                        The internet is used in communication in every field through out the world.<br /> 
-                                        Most of the counties get the use of internet in every field for communication. <br />
-                                        But in Sri Lanka, it is known that our usage of internet is in a low level. <br />
-                                        But it has spread out in every field. <br />
-                                        Because of the internet the qualitative development of education has increased. <br /> 
+                                        The internet is used in communication in every field through out the world. 
+                                        Most of the counties get the use of internet in every field for communication. 
+                                        But in Sri Lanka, it is known that our usage of internet is in a low level. 
+                                        But it has spread out in every field. 
+                                        Because of the internet the qualitative development of education has increased. 
                                         We are happy to be in the forefront in the field of sports,IT and with our academic excellence. 
                                     </p>
                                 </div>
@@ -215,12 +188,6 @@
                         </header>
                         
                     </div>
-                        </td>
-                    </tr>
-                </table>
-                    <br /><br /><br />
-                    
-                    
                 </div>
                 
                     <div >
@@ -228,27 +195,27 @@
                             OUR VISION
                         </div> 
                         <div id="panel" style="50%">
-                            <b>Gifting of an excellent Thomian to the nation and the universe.</b>
+                            Gifting of an excellent Thomian to the nation and the universe.
                         </div>    
                     
                     
-                        <div id="flip2" class="vmcolor">
+                        <div id="flip2" style="width: 50%;" class="vmcolor">
                             OUR MISSION 
                         </div>
-                        <div id="panel2" >
-                        <b>Creating a perfect individual, well-equipped with knowledge, attitudes and skills, who can face the challenging situations with confidence.</b>
+                        <div id="panel2" style="50%">
+                        Creating a perfect individual, well-equipped with knowledge, attitudes and skills, who can face the challenging situations with confidence.
                         </div>
                         
                         
-                        <div id="flip3" class="vmcolor">
-                            OBJECTIVES OF ST. THOMAS COLLEGE, MATARA.
+                        <div id="flip3" style="width: 50%;" class="vmcolor">
+                            Objectives of St. Thomas College, Matara.
                         </div> 
-                        <div id="panel3" >
+                        <div id="panel3" style="50%">
                             <ol>
-                                <li><b>Providing equal educational opportunities for all students.</b></li><br />
-                                <li><b>Providing encouragement and secure locality for all students through implementation of well-organised educational programme.</b></li><br />
-                                <li><b>Building up of self confidence in all students in order to promote their achievement levels by developing their potential.</b></li><br />
-                                <li><b>Developing and implementing a conducive family environment within the school premises.</b></li><br />
+                                <li>Providing equal educational opportunities for all students.</li>
+                                <li>Providing encouragement and secure locality for all students through implementation of well-organised educational programme.</li>
+                                <li>Building up of self confidence in all students in order to promote their achievement levels by developing their potential.</li>
+                                <li>Developing and implementing a conducive family environment within the school premises.</li>           
                             </ol>
                         </div> 
                     </div>      
@@ -271,7 +238,7 @@
 
 
 
-<footer style="color: white;" >
+<footer>
     
         <ul>
             <li>Created by GSVM Ishan</li>

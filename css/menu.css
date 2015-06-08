@@ -51,7 +51,7 @@ nav {
         
         nav ul ul {
             background: #5f6975;
-            border-radius: 0px;
+            border-radius: 4px;
             padding: 0;
             position: absolute;
             top: 100%;
@@ -65,6 +65,6 @@ nav {
         
         nav ul ul li a{
             padding: 15px 40px;
-            color: #fff;
+            color: white;
         }
         
