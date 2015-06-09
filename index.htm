@@ -114,8 +114,33 @@
             margin-left:auto; 
             margin-right:auto;
         }
+        
+        .finalimg{
+            display: none;
+            width: 100%;
+        }
     </style>
     
+    <style type="text/css">
+
+        @media all and (max-width: 600px) {
+            #slider1 {
+                display:none;
+            }
+            
+            #prince1 {
+                display:none;
+            }
+        }
+        
+        @media all and (max-width: 600px) {
+            #final1 {
+                display:inline;
+                
+            }
+            
+        }
+    </style>
     
     
     <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
@@ -125,8 +150,11 @@
 </head>
 
 <body id="backcenter">
+        <div class="finalimg" id="final1" >
+            <img src="images/final.jpg" style="width: 100%;" />
+        </div>
     
-        <div ng-controller="slideShowTest" class="imageslide" ng-switch='slideshow' ng-animate="'animate'">
+        <div ng-controller="slideShowTest" class="imageslide" ng-switch='slideshow' ng-animate="'animate'" id="slider1">
 			<div  ng-switch-when="1">
 				<img src="images/slider/1.jpg" style="width: 100%;"/>
 			</div>	
@@ -150,14 +178,14 @@
             <nav style="width: 100%;">
                 <ul>
                     <li><a href="index.htm" >Home</a></li>
-                    <li><a href="AboutUs.html" >About School</a></li>
-                    <li><a href="clubs.html" >Clubs</a></li>
+                    <li><a href="http://stcmatara.esy.es/AboutUs.html" >About School</a></li>
+                    <li><a href="http://stcmatara.esy.es/clubs.html" >Clubs</a></li>
                         <ul>
                             <li></li>
                         </ul>
-                    <li><a href="gallery.html" >Gallery</a></li>
-                    <li><a href="Alumni.html" >Alumina</a></li>
-                    <li><a href="Contactus.htm" >Contact Us</a></li>                   
+                    <li><a href="http://stcmatara.esy.es/gallery.html" >Gallery</a></li>
+                    <li><a href="http://stcmatara.esy.es/Alumni.html" >Alumina</a></li>
+                    <li><a href="http://stcmatara.esy.es/Contactus.htm" >Contact Us</a></li>                   
                     
                 </ul>
             </nav>
@@ -172,7 +200,7 @@
                 <table style="color: white;" class="center">
                     <tr>
                         <td>
-                            <div >
+                            <div id="prince1">
                                 <img src="images/prince.jpg" />
                             </div>        
                         </td>
@@ -256,7 +284,7 @@
             </div>
             </div>
         
-        
+        <br /><br /><br />
         
         
         <div>
@@ -272,22 +300,37 @@
 
 
 <footer style="color: white;" >
-    
-        <ul>
-            <li>Created by GSVM Ishan</li>
-            <li>Index No 12000604</li>
-            <li>Registration No 2012CS060</li>
-            <li>Used Technologies
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>jQuery</li>
-                            <li>AngularJS</li>
-                        </ul>
-            </li>
+    <table class="center">
+        <tr>
+            <td>
+                
+                <ul>
+                    <li>Created by GSVM Ishan</li>
+                    <li>Index No 12000604</li>
+                    <li>Registration No 2012CS060</li>
+                    <li>Used Technologies
+                                <ul>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>jQuery</li>
+                                    <li>AngularJS</li>
+                                    <li>Media Queries</li>
+                                </ul>
+                    </li>
 
-        </ul>
+                </ul>
+            
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>      
+            
+            <td>
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            </td>
+        </tr>
+    </table>
+        
     
-</footer>    
+        </footer>    
 
 </body>
 </html>
