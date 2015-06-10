@@ -142,6 +142,25 @@
         }
     </style>
     
+    <style>
+      #stcmap {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('stcmap');
+        var mapOptions = {
+          center: new google.maps.LatLng(5.948679, 80.544010),
+          zoom: 19,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     
     <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
     
@@ -175,14 +194,22 @@
         
         
         <div style="position: center; width: 100%;" >
+        
             <nav style="width: 100%;">
                 <ul>
                     <li><a href="index.htm" >Home</a></li>
                     <li><a href="http://stcmatara.esy.es/AboutUs.html" >About School</a></li>
-                    <li><a href="http://stcmatara.esy.es/clubs.html" >Clubs</a></li>
+                    <li><a href="http://stcmatara.esy.es/clubs.html" >Clubs</a>
                         <ul>
-                            <li></li>
+                            <li>Health Club</li>
+                            <li>Green Hands Club</li>
+                            <li>Board of Prefects</li>
+                            <li>Buddhist Society</li>
+                            <li>Muslim Majlis</li>
+                            <li>Birds Club</li>
+                            <li>Social Services Association</li>
                         </ul>
+                    </li>
                     <li><a href="http://stcmatara.esy.es/gallery.html" >Gallery</a></li>
                     <li><a href="http://stcmatara.esy.es/Alumni.html" >Alumina</a></li>
                     <li><a href="http://stcmatara.esy.es/Contactus.htm" >Contact Us</a></li>                   
@@ -235,6 +262,7 @@
                                         Because of the internet the qualitative development of education has increased. <br /> 
                                         We are happy to be in the forefront in the field of sports,IT and with our academic excellence. 
                                     </p>
+                                    <h3>Mr. W. B. Piyathissa</h3>
                                 </div>
                                 
                                 <button id="showmore">Show More</button>
@@ -286,7 +314,8 @@
         
         <br /><br /><br />
         
-        
+        <div id="stcmap" style="width: 100%;"></div>
+        <br /><br /><br />
         <div>
             <audio autoplay="" preload="">
                 <source src="audio/stc.ogg" type="audio/ogg" />
@@ -314,6 +343,7 @@
                                     <li>jQuery</li>
                                     <li>AngularJS</li>
                                     <li>Media Queries</li>
+                                    <li>Google Map API</li>
                                 </ul>
                     </li>
 
